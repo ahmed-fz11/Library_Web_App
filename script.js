@@ -34,11 +34,24 @@ function addBookToLib(bookObj)
     })
 }
 
-let book1 = new Book("JK Rowling","Harry Potter",23,'yes');
-let book2 = new Book("RR Martin","Game of Thrones",45,'no');
+let bookForm = document.querySelector('.book-form');
+let content = document.querySelector('.content');
+let addBookBtn = document.querySelector('add-book');
 
-addBookToLib(book1);
-addBookToLib(book2);
+
+bookForm.addEventListener('submit',(e)=>{
+    e.preventDefault();
+
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const pages = document.getElementById('pages').value;
+    const read = document.getElementById('read').value;
+
+    let bookObj = new Book(author,title,pages,read);
+    addBookToLib(bookObj);
+
+    bookForm.reset()
+})
 
 
 
