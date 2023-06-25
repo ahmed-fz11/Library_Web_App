@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+    <h5>With local storage. By Ahmad Faraz</h5>
+    <button class="add-book">Add a book</button>
+    </div>
+
+    <div class="content">
+        <div class="heading book-info">
+            <h1>Title</h1>
+            <h1>Author</h1>
+            <h1>Pages</h1>
+            <h1>Read</h1>
+            <h1>Options</h1>
+        </div>
+        <!-- <div class="book-info">
+            <h1>Harry Potter</h1>
+            <h1>JK Rowling</h1>
+            <h1>24</h1>
+            <h1>Yes</h1>
+            <button class="del">Delete</button>
+        </div> -->
+    </div>
+
+    <div class="book-form">
+        <form action="/">
+            <h3>Book Info</h3>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Harry Potter">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" placeholder="J.K Rowling">
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" placeholder="125">
+            </div>
+            <div>
+                <label for="read">Read?</label>
+                Yes <input type="radio" name="yes" id="read">
+                No <input type="radio" name="no" id="read">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

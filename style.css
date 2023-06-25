@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f59e0b;
+    font-family: "Kanit", sans-serif;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.add-book{
+    border: none;
+    border-radius: 0.2rem;
+    height: 1.4rem;
+    width: 6rem;
+    background-color: #09090b;
+    color: #f59e0b;
+}
+
+.add-book:hover{
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-info{
+    width: 70%;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.4rem;
+    color: #0f172a;
+}
+
+.heading{
+    font-size: 1rem;
+    background-color: #09090b;
+    color: #f59e0b;
+}
+
+.book-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
