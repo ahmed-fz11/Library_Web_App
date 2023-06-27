@@ -1,10 +1,11 @@
-//constructor function for a book
-function Book(author,title,pages,haveRead)
-{
-    this.author = author;
-    this.title = title;
-    this.pages = pages;
-    this.haveRead = haveRead;
+
+class Book {
+    constructor(author,title,pages,haveRead){
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.haveRead = haveRead;
+    }
 }
 
 //this func appends a book object to myLibrary array of objects
